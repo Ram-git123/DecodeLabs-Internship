@@ -1,0 +1,103 @@
+# Linux & Command Line Basics - Commands Used
+
+## 1. Check Current Directory
+
+```bash
+pwd
+```
+
+**Usage:** Displays the current working directory.
+
+---
+
+## 2. Create Application Folders
+
+```bash
+mkdir -p app/logs
+```
+
+**Explanation:**
+- `mkdir` = make directory
+- `-p` = create parent directories if they do not exist
+
+---
+
+## 3. Create Configuration File
+
+```bash
+touch app/config.conf
+```
+
+---
+
+## 4. Create Server Log
+
+```bash
+echo "Started" > app/logs/server.log
+```
+
+**Explanation:**
+- `echo` prints text.
+- `>` redirects output into a file.
+
+---
+
+## 5. Verify Directory Structure
+
+```bash
+pwd
+ls -R app
+```
+
+**Explanation:**
+- `ls` = list files
+- `-R` = recursive listing
+
+---
+
+## 6. Rename the Log File
+
+```bash
+mv app/logs/server.log app/logs/server.bak
+```
+
+Renames `server.log` to `server.bak`.
+
+**Explanation:**
+- `mv` = move or rename files.
+
+---
+
+## 7. Check File Details
+
+```bash
+ls -l app/config.conf
+```
+**Explanation:**
+- `-l` = long listing format
+
+---
+
+## Additional Learning
+
+```bash
+tail -f app/logs/server.bak
+```
+
+**Purpose:** Continuously monitors log updates in real time.
+
+Stop monitoring using:
+
+```bash
+Ctrl + C
+```
+
+---
+
+## Skills Learned
+
+- Linux command-line basics
+- File and directory management
+- Log handling
+- Configuration management
+- Safe command execution practices
